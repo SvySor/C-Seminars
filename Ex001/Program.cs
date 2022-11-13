@@ -1,6 +1,8 @@
 ﻿// Enter data
 Console.Write("Enter number: ");
 int a = Convert.ToInt32(Console.ReadLine());
+// Calculation
 int res = a * a;
-Console.Write("Squere of the number: ");
+// Print out
+Console.Write($"Squere of the number {a} is ");
 Console.WriteLine(res);
