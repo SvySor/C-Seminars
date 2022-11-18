@@ -5,10 +5,10 @@ int N = Convert.ToInt32(Console.ReadLine());
 
 // Calculation
 int count = -N;
+Console.Write(count);
 while (count <= N)
 {
-    Console.Write($" {count},");
+    Console.Write($", {count}");
     count++;
  }
-Console.WriteLine("\b \b");
 Console.WriteLine();
