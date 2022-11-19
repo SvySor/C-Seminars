@@ -64,8 +64,8 @@ void Zadacha14 ()
     }
  }
 
-//Zadacha9();
-//Zadacha11();
-//Zadacha12();
-//Zadacha14();
+Zadacha9();
+Zadacha11();
+Zadacha12();
+Zadacha14();
 Zadacha16();

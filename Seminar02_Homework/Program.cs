@@ -65,6 +65,6 @@ else Day = "Something is wrong";
 return Day;
 }
 
-//Zadacha10();
-//Zadacha13();
+Zadacha10();
+Zadacha13();
 Zadacha15();
