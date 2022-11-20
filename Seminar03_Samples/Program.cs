@@ -81,9 +81,9 @@ namespace Seminar02 // Note: actual namespace depends on the project name.
                 Console.WriteLine();
                 }
 
-            //Zadacha17();
-            //Zadacha18();
-            //Zadacha21();
+            Zadacha17();
+            Zadacha18();
+            Zadacha21();
             Zadacha22();
         }
     }
