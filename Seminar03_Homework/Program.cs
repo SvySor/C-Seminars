@@ -71,13 +71,13 @@ namespace Seminar02 // Note: actual namespace depends on the project name.
                     Console.WriteLine($"{Math.Abs(N) / N * count} ^ {Deg} = {count_3}");
                     count++;
                 }
-                Console.WriteLine();               
+                Console.WriteLine();
             }
 
-                // Zadacha19();
-                // Zadacha21();
-                Zadacha23();
+            // Zadacha19();
+            // Zadacha21();
+            Zadacha23();
 
-            }
         }
     }
+}
