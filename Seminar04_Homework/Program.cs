@@ -33,9 +33,9 @@ namespace Homework04 // Note: actual namespace depends on the project name.
                 Console.WriteLine("A ^ B = " + Exp);
             }
 
-// Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+            // Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 
-         void Zadacha27()
+            void Zadacha27()
             {
                 Console.Write("Enter number: ");
                 int Number = Convert.ToInt32(Console.ReadLine());
@@ -53,8 +53,41 @@ namespace Homework04 // Note: actual namespace depends on the project name.
                 Console.WriteLine("Сумма цифр в числе = " + Sum_Digit);
             }
 
-        Zadacha25();
-        Zadacha27();
+
+            // Задача 29: Напишите программу, которая задаёт массив из 8 случайных целых чисел и выводит отсортированный по модулю массив.
+
+            void Zadacha29()
+            {
+                int[] array = new int[8];
+                Random rnd = new Random();
+                for (int i = 0; i < 8; i++)
+                {
+                    array[i] = rnd.Next(-1000, 1000);
+                    Console.WriteLine(array[i]);
+                }
+                int max = array[0];
+                for (int j = 7; j > 1; j--)
+                {
+                    for (int i = 1; i < j; i++)
+                    {
+                        if (Math.Abs(array[i]) > Math.Abs(array[i + 1]))
+                        {
+                            max = array[i];
+                            array[i] = array[i + 1];
+                            array[i + 1] = max;
+                        }
+                    }
+                }
+                Console.WriteLine();
+                for (int i = 0; i < 8; i++)
+                {
+                    Console.WriteLine(array[i]);
+                }
+            }
+
+            Zadacha25();
+            Zadacha27();
+            Zadacha29();
         }
     }
 }
